@@ -10,13 +10,17 @@ A set of notebooks created during a temp contract as an EO data scientist at Spa
 
 - Xarray Foundations: A walkthrough of the basics of the xarray library, including producing a synthetic thermal dataset, building a data array, basic data manipulation (e.g. resampling), plotting and netCDF4 conversion. 
 
-- ESA Permafrost Extent: Reads in the V4 permafrost extent data from the ESA cci data on CEDA. Plots this as a heatmap for 1997.
+- ESA Permafrost Extent: Reads in the V4 permafrost extent data from the ESA cci data on CEDA. Plots this as a heatmap for 1997, also produces a time series of average permafrost fraction (as well as associated statistical variables and plots) using numerous different libraries.
 
 - Victoria Island Skin Temp: Reads ERA5 skin temperature data for a location on Victoria Island (Canada) using both the netCDF library and the xarray library. Creates line and scatter plots of skin temperature over time.
 
 ## Outputs 
 
+- Scatter (with regression line) and line plots of skin temperature for Victoria Island (2000 - 2025).
+
 - Peramfrost extent 1997: The permafrost area fraction has been plotted for the arctic region (>50 degs latitude).
+
+- Annual permafrost fraction (1997 - 2021): Scatter plot and regression line showing the reduction in average PFR with time. Two predicted points (1990 and 2026) have also been plotted using the scikit-learn library.
 
 ## Data 
 
